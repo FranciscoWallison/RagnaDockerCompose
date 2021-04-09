@@ -8,7 +8,7 @@ EXP:
   ./serve/rathena
   ./serve/Hercules
 ````
-#### 2 º - Altere a [linha](https://github.com/FranciscoWallison/RagnaDockerCompose/blob/main/docker-compose.yaml#L15) ````<EMULADOR>```` para a pasta do emulador baixado.
+#### 2 º - Altere a [linha](https://github.com/FranciscoWallison/RagnaDockerCompose/blob/main/docker-compose.yaml#L14) ````<EMULADOR>```` para a pasta do emulador baixado ou seu.
 EXP: 
 ````
 - ./serve/rathena:/emulador
