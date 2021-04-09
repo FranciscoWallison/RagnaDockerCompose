@@ -12,7 +12,7 @@ services:
     # command:  bash -c "dos2unix -f entrypoint.sh && chmod a+x entrypoint.sh && ./entrypoint.sh"
     volumes:
       # LEMBRAR SUBISTITUIR O NOME <EMULADOR> PARA A PASTE DO SEU SERVER
-      - ./serve/rathena:/emulador
+      - ./serve/<EMULADOR>:/emulador
     ports:
       - "5121:5121"
       - "6121:6121"
