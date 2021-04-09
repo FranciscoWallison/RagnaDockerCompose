@@ -27,7 +27,7 @@ EXP-PASTA:
     - logs.sql
     - main.sql
 ...
-    /db/renewal
+  /db/renewal
     - item_db_re.sql
     - mob_db_re.sql
     - logs.sql
