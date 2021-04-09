@@ -2,8 +2,7 @@ version: '3' # vs mais atual
 
 services: 
   serve: 
-    image: chicowall/ragnadocker:latest
-    # build: serve
+    build: serve
     container_name: ragnarok-app
     restart: always
     tty: true
@@ -34,7 +33,7 @@ services:
       - "33006:3306"
     volumes:
       - ./db/dbdata:/var/lib/mysql
-      - ./db/prere:/docker-entrypoint-initdb.d
+      - ./db/<MYTABLES>:/docker-entrypoint-initdb.d
     environment:
       - MYSQL_DATABASE=ragnarok
       - MYSQL_ROOT_PASSWORD=R00t+
