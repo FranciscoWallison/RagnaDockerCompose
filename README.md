@@ -5,8 +5,8 @@
 #### 1 º - Baixe o emulador ou adicione o seu emulador na pasta [serve](https://github.com/FranciscoWallison/RagnaDockerCompose/tree/main/serve) 
 EXP: 
 ````
-  serve/rathena
-  serve/Hercules
+  ./serve/rathena
+  ./serve/Hercules
 ````
 #### 2 º - Altere a [linha](https://github.com/FranciscoWallison/RagnaDockerCompose/blob/main/docker-compose.yaml#L15) ````<EMULADOR>```` para a pasta do emulador baixado.
 EXP: 
