@@ -37,5 +37,5 @@ EXP-docker-compose.yaml:
 ````
   - ./db/pre-renewal:/docker-entrypoint-initdb.d
 ...
-- ./db/renewal:/docker-entrypoint-initdb.d
+  - ./db/renewal:/docker-entrypoint-initdb.d
 ````
