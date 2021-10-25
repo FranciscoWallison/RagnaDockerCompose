@@ -33,7 +33,7 @@ services:
       - "33006:3306"
     volumes:
       - ./db/dbdata:/var/lib/mysql
-      - ./db/<MYTABLES>:/docker-entrypoint-initdb.d
+      - ./db/sql-files:/docker-entrypoint-initdb.d
     environment:
       - MYSQL_DATABASE=ragnarok
       - MYSQL_ROOT_PASSWORD=R00t+
