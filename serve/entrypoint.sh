@@ -21,8 +21,16 @@ echo "Run the configure script"
 ./configure --enable-packetver=20180131 && make clean server
  echo "Start server"
 ./athena-start start
-echo "SUCESSOOOOOOOO !!!!!!!!!!!!!"
 
+
+
+sed -i 's/_ip: 127.0.0.1/_ip: db/g' ./conf/inter_athena.conf
+
+# sed -i 's/_ip: 127.0.0.1/_ip: db/g' ./conf/inter_athena.conf
+# sed -i 's/_ip: 127.0.0.1/_ip: db/g' ./conf/inter_athena.conf
+# sed -i 's/_ip: 127.0.0.1/_ip: db/g' ./conf/inter_athena.conf
+
+echo "SUCESSOOOOOOOO !!!!!!!!!!!!!"
 while [ 1 ]; do
     /bin/bash
 done
