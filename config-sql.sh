@@ -1,10 +1,10 @@
 #!/bin/bash
 echo "init git clone"
-cd /serve && git clone https://github.com/rathena/rathena.git emulador && cd ..
+cd serve && git clone https://github.com/rathena/rathena.git emulador && cd ..
 echo "finish git clone"
 
 echo "init copy"
-cd /serve/emulador/sql-files
+cd serve/emulador/sql-files
 
 cp -v ../../../serve/emulador/sql-files/item_cash_db.sql ../../../db/sql-files/item_cash_db.sql
 cp -v ../../../serve/emulador/sql-files/item_db_etc.sql ../../../db/sql-files/item_db_etc.sql
