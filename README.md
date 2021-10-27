@@ -48,6 +48,7 @@ EXP-docker-compose.yaml:
  - wsproxy -a serve:6900,serve:6121,serve:5121
  - docker-compose -f "docker-compose.yaml" up -d --build
 
+- Build
 ````
   sed -i 's/_ip: 127.0.0.1/_ip: db/g' ./conf/inter_athena.conf &&
   echo "Formart file"  &&
