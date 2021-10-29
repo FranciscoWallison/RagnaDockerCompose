@@ -5,7 +5,6 @@ echo "finish git clone"
 
 echo "init copy"
 cd serve/emulador/sql-files
-
 cp -v ../../../serve/emulador/sql-files/item_cash_db.sql ../../../db/sql-files/item_cash_db.sql
 cp -v ../../../serve/emulador/sql-files/item_db_etc.sql ../../../db/sql-files/item_db_etc.sql
 cp -v ../../../serve/emulador/sql-files/mob_db2.sql ../../../db/sql-files/mob_db2.sql
