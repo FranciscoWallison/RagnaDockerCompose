@@ -15,7 +15,17 @@ EXP:
 - ./serve/Hercules:/emulador
 ````
 #### 3 º - Nas configurações de acesso ao banco de dados que os emuladores utilizam como o arquivo ````inter_athena.conf````, substitua ````127.0.0.1```` por ````db````.
-#### 4 º - Nas configurações de acesso como ````char_athena.conf````, ````login_athena.conf```` e ````map_athena.conf```` substitua ````127.0.0.1```` por ````server````.
+#### 4 º - Nas configurações de acesso como
+````char_athena.conf````
+---
+    login_ip: serve
+    char_ip: 127.0.0.1
+
+````map_athena.conf```` 
+---
+    char_ip: serve
+    map_ip: 127.0.0.1
+
 #### 5 º - Configurando as tabelas do banco de dados na [linha](https://github.com/FranciscoWallison/RagnaDockerCompose/blob/main/docker-compose.yaml#L36) ````- ./db/<MYTABLES>:/docker-entrypoint-initdb.d```` substitua pela [pasta](https://github.com/FranciscoWallison/RagnaDockerCompose/tree/main/db) com todas suas tabelas.
 
 
