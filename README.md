@@ -71,10 +71,8 @@ EXP-docker-compose.yaml:
   chmod a+x function.sh  &&
   echo "Stop the server if it is started"  &&
   ./athena-start stop  &&
-  echo "Run the configure script"  &&
-  ./configure  &&
   echo "Finally compile Emulator"  &&
-  ./configure --enable-packetver=20180131 && make clean server  &&
+  ./configure && make clean server  &&
   echo "Start server"  &&
   ./athena-start start
 ````
