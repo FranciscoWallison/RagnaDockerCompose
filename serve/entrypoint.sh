@@ -16,7 +16,7 @@ echo "Run the configure script" &&
  echo "Finally compile Emulator" &&
  make clean server &&
  echo "Start server" &&
-./athena-start start&&
+./athena-start start
 
 
 # sed -i 's/_ip: 127.0.0.1/_ip: db/g' ./conf/inter_athena.conf
