@@ -61,6 +61,10 @@ EXP-docker-compose.yaml:
 - Build
 ````
   sed -i 's/_ip: 127.0.0.1/_ip: db/g' ./conf/inter_athena.conf &&
+  sed -i 's/\/\/login_ip: 127.0.0.1/login_ip: serve/g' ./conf/char_athena.conf &&
+  sed -i 's/\/\/char_ip: 127.0.0.1/char_ip: 127.0.0.1/g' ./conf/char_athena.conf &&
+  sed -i 's/\/\/char_ip: 127.0.0.1/char_ip: serve/g' ./conf/map_athena.conf &&
+  sed -i 's/\/\/map_ip: 127.0.0.1/map_ip: 127.0.0.1/g' ./conf/map_athena.conf &&
   echo "Formart file"  &&
   dos2unix -f configure  &&
   dos2unix -f athena-start  &&
