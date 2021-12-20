@@ -60,7 +60,7 @@ EXP-docker-compose.yaml:
  - mysql -uragnarok -pragnarok; 
  - USE ragnarok;
 
-- Build
+- Comando de Build
 ````
   sed -i 's/_ip: 127.0.0.1/_ip: db/g' ./conf/inter_athena.conf &&
   sed -i 's/\/\/login_ip: 127.0.0.1/login_ip: serve/g' ./conf/char_athena.conf &&
