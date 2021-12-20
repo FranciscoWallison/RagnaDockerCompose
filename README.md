@@ -57,6 +57,8 @@ EXP-docker-compose.yaml:
  - ./configure --enable-packetver=20141022 && make clean && make server
  - wsproxy -a serve:6900,serve:6121,serve:5121
  - docker-compose -f "docker-compose.yaml" up -d --build
+ - mysql -uragnarok -pragnarok; 
+ - USE ragnarok;
 
 - Build
 ````
