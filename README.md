@@ -54,7 +54,9 @@ EXP-docker-compose.yaml:
 # Comandos uteis
  - docker exec -i -t ragnarok-app /bin/bash
  - ./entrypoint.sh 
- - ./configure --enable-packetver=20141022 && make clean && make server
+ - ./configure --enable-packetver=20141022 && make clean && make server 
+ - ./configure && make clean && make server
+ - ./athena-start stop && ./athena-start start
  - wsproxy -a serve:6900,serve:6121,serve:5121
  - docker-compose -f "docker-compose.yaml" up -d --build
  - mysql -uragnarok -pragnarok; 
