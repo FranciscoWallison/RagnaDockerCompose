@@ -50,7 +50,6 @@ EXP-docker-compose.yaml:
   - ./db/renewal:/docker-entrypoint-initdb.d
 ````
 
-
 # Comandos uteis
  - docker exec -i -t ragnarok-app /bin/bash
  - ./entrypoint.sh 
