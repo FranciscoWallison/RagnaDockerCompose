@@ -14,14 +14,15 @@ echo "Stop the server if it is started"
 echo "Run the configure script" 
 ./configure 
  echo "Finally compile Emulator" 
-./configure --enable-packetver=20180131 make clean server 
+./configure --enable-packetver=20200401 && make clean server 
  echo "Start server" 
 ./athena-start start
 
 
-# sed -i 's/_ip: 127.0.0.1/_ip: db/g' ./conf/inter_athena.conf
-# sed -i 's/_ip: 127.0.0.1/_ip: db/g' ./conf/inter_athena.conf
-# sed -i 's/_ip: 127.0.0.1/_ip: db/g' ./conf/inter_athena.conf
+# sed -i 's/login_ip: serve///login_ip: 127.0.0.1/g' ./conf/char_athena.conf
+# sed -i 's/char_ip: 127.0.0.1///char_ip: 127.0.0.1/g' ./conf/char_athena.conf
+# sed -i 's/char_ip: serve///char_ip: 127.0.0.1/g' ./conf/inter_athena.conf
+# sed -i 's/map_ip: 127.0.0.1///map_ip: 127.0.0.1/g' ./conf/inter_athena.conf
 
 echo "SUCESSOOOOOOOO !!!!!!!!!!!!!"
 while [ 1 ]; do
